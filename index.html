@@ -5,35 +5,11 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="Content/Site.css" rel="stylesheet" />
-</head>
-<body class="alinhado-ao-centro">
-    <h1>Sua grid</h1>
-    <div class="auto-fit">
-        <grid params="items: pessoas"></grid>
-    </div>
-    <br />
-    <span data-bind="text: totalPessoas"></span>
-    <br />
-    <form role="form" class="auto-fit" data-bind="submit: adicionarPessoa, with: pessoa">
-        <div class="form-group">
-            <label for="nome">nome</label>
-            <input type="text" class="form-control" id="nome" placeholder="Entre com seu nome" data-bind="value: nome, hasfocus: $root.nomeFocado">
-        </div>
-        <div class="form-group">
-            <label for="idade">idade</label>
-            <input type="number" class="form-control" id="idade" placeholder="idade" data-bind="value: idade">
-        </div>
-        <button type="submit" class="btn btn-default">Adicionar</button>
-    </form>
     <script src="Scripts/knockout-3.2.0.debug.js"></script>
     <script src="Scripts/jquery-2.1.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
-    <script src="Scripts/Components/Grid/Grid.js"></script>
-    <script src="Scripts/App/ViewModel.js"></script>
-    <script type="text/javascript">
-        window.viewModel = new ViewModel();
+</head>
+<body class="alinhado-ao-centro">
 
-        ko.applyBindings(window.viewModel);
-    </script>
 </body>
 </html>
